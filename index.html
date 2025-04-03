@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Ahmed</title>
     <!-- File Css -->
-    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- File Script  -->
+    <script src="/main.js" defer></script>
     <!-- Icon Logo  -->
     <link rel="icon" href="img/logo_icon.png" />
     <!-- Font Awesome -->
@@ -31,7 +33,11 @@
     <header>
       <nav class="container">
         <a href="#" class="logo"><img src="/img/logo.png" alt="" /></a>
-        <div class="links">
+        <div class="links" id="links">
+          <span class="close_menu" onclick="open_close_menu()"
+              ><i class="fa-solid fa-xmark"></i
+          ></span>
+          <a href="#" class="logo"><img src="/img/logo.png" /></a>
           <a href="#" class="active">Home</a>
           <a href="#">About</a>
           <a href="#">Services</a>
@@ -53,6 +59,9 @@
           <a href="mailto:ahmed525155@gmail.com" target="_blank"
             ><i class="fa-solid fa-envelope"></i
           ></a>
+          <span class="icon_menu" onclick="open_close_menu()"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
         </div>
       </nav>
     </header>
